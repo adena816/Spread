@@ -6,19 +6,19 @@
     --sub-heading: calc(var(--body-copy) * 1.5);
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 375px) {
     :root {
       --body-copy: 20px;
       --page-spacing: 48px;
   
-      --main-heading: calc(var(--body-copy) * 4);
+      --main-heading: calc(var(--body-copy) * 6);
       --sub-heading: calc(var(--body-copy) * 2);  
     }
   }
   
   
   body {
-    font-family: sans-serif;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: var(--body-copy);
   }
   
@@ -36,13 +36,16 @@
   
   header,
   footer {
-    background-color: gold;
+    background-color: #FAFF00;
   }
   
   header {
     display: flex;
     flex-direction: column;
     gap: calc(var(--page-spacing) * 2);
+    min-height: 100vh;
+    min-width: 100vw;
+    padding-top: 15vh;
   }
   
   @media (min-width: 768px) {
@@ -50,4 +53,13 @@
       flex-direction: row;
       justify-content: space-between;
     }
+    p {
+      padding-bottom: 30px;
+      padding-right: 250px;
+    }
   }
+
+  .highlightpink { background-color:#FF71F1; }
+  .highlightgreen {background-color: #8FFF00; }
+  .highlightblue {background-color: #71E5FF; }
+  .highlightyellow {background-color: #FAFF00; }

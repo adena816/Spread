@@ -42,20 +42,26 @@
   header {
     display: flex;
     flex-direction: column;
-    gap: calc(var(--page-spacing) * 2);
+    gap: calc(var(--page-spacing) * 1);
     min-height: 100vh;
     min-width: 100vw;
     padding-top: 15vh;
   }
   
+  footer {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+
   @media (min-width: 768px) {
     header {
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-around;
     }
     p {
       padding-bottom: 30px;
-      padding-right: 250px;
+      padding-right: 300px;
     }
   }
 

@@ -114,11 +114,15 @@
     .zoom-in { cursor: zoom-in; }
 
     @media print {
+
+    @page { margin: 30px;}
+
       header {
         min-height: 30vh;
-        border-bottom: 2px solid black;
-      }
+        border-bottom: 2px solid black;}
+      
       footer {display: none;} 
+
       a {display: none;}
 
       body {padding-left: 30px;

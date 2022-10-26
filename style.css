@@ -6,44 +6,28 @@
     --sub-heading: calc(var(--body-copy) * 1.5);
   }
   
-  @media (min-width: 768px) {
-    header {
-      flex-direction: row;
-      justify-content: space-around;
-    }
-    p {
-      width:60%;
-      margin-left: auto;
-      margin-right: auto;
-    }
 
-    details {
-      width:60%;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 10%
-    }
-    }
-
-
-  @media (min-width: 376px) {
+  @media (min-width: 375px) {
     :root {
-      --body-copy: 20px;
-      --page-spacing: 48px;
+      --body-copy: 16px;
+      --page-spacing: 30px;
   
-      --main-heading: calc(var(--body-copy) * 5.5);
+      --main-heading: calc(var(--body-copy) * 3.5);
       --sub-heading: calc(var(--body-copy) * 2);  
     }
+    
+    details {
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      font-weight: bold;
   }
-  
+}
 
   p {      
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
   
   body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-weight: light;
     font-size: var(--body-copy);
   }
   
@@ -59,8 +43,7 @@
     font-size: var(--sub-heading);
   }
   
-  header,
-  footer {
+  header,footer {
     background-image: url("Critical\ Graphic\ Design.jpg");
     background-color: #FAFF00;
     background-size: cover; 
@@ -72,10 +55,11 @@
     gap: calc(var(--page-spacing) * 1);
     min-height: 90vh;
     min-width: 100vw;
-    padding-top: 5vh;
+    padding-top: 11vh;
   }
   
   footer {
+    padding-top: 60px;
     display:flex;
     flex-direction: row;
     justify-content:space-between;
@@ -90,7 +74,41 @@
   .green {
     color: #8FFF00;
     background-color: black;}
-
-
-
   
+  .pink {
+    color: #FF71F1;
+    background-color: black;}
+
+  .blue {
+    color: #71E5FF;
+    background-color: black;}
+
+  .yellow {
+    color: #FAFF00;
+    background-color: black;}
+
+  @media (min-width: 768px) {
+    header {
+      flex-direction: row;
+      justify-content: space-around;
+    --main-heading: calc(var(--body-copy) * 7);
+    --sub-heading: calc(var(--body-copy) * 4);  
+    }
+    p {
+      width:60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    details {
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      font-weight: bold;
+      font-size: var(--body-copy);
+      width:60%;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 10px;
+    }
+    }
+
+    .zoom-in { cursor: zoom-in; }

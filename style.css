@@ -115,8 +115,6 @@
 
     @media print {
 
-    @page { margin: 30px;}
-
       header {
         min-height: 30vh;
         border-bottom: 2px solid black;}
@@ -127,4 +125,10 @@
 
       body {padding-left: 30px;
             padding-right: 60px}
+
+      @page{
+        size: 8.5in 11in;
+        margin-top: 1in;
+        margin-bottom: 1in;
       }
+    }

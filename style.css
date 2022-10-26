@@ -112,3 +112,15 @@
     }
 
     .zoom-in { cursor: zoom-in; }
+
+    @media print {
+      header {
+        min-height: 30vh;
+        border-bottom: 2px solid black;
+      }
+      footer {display: none;} 
+      a {display: none;}
+
+      body {padding-left: 30px;
+            padding-right: 60px}
+      }
